@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube</title>
+
+  <!-- css -->
+  <!-- <link rel="stylesheet" href="./asset/css/swiper-bundle.min.css"> -->
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+  <link rel="stylesheet" href="./asset/css/style.css">
+  
+</head>
+<body>
+  <!-- header -->
+  <header class="header">
+    <!-- btn -->
+    <button type="button" class="btn-common btn-gnb_toggle">
+      <span class="blind">메뉴 열기</span>      
+    </button>
+
+    <div class="header_inr">
+      <!-- logo -->
+      <h1 class="logo">
+        <a href="index.html" class="logo_link">
+          <span class="blind">YouTube</span>
+        </a>
+      </h1>
+      
+      <!-- search -->
+      <div class="search">        
+        <div class="search_inr">
+          <form action="">
+            <fieldset>
+              <legend class="blind">검색 영역</legend>
+  
+              <label for="search_input" class="search_label">
+                <span class="blind">검색 입력창</span>
+              </label>
+              <div class="search_input-box">
+                <input type="text" name="" id="search_input" placeholder="검색" class="search_input"> 
+
+                <div class="search_btn-box">
+                  <button type="button" class="search_btn-keyboard">
+                    <span class="blind">가상 키보드</span>
+                  </button>
+                  <button type="button" class="btn-common search_btn-reset">
+                    <span class="blind">가상 키보드</span>
+                  </button>
+                </div>
+              </div>
+              <button type="submit" class="search_submit">
+                <span class="blind">검색</span>
+              </button>
+            </fieldset>        
+          </form>              
+        </div>
+        <button class="btn-common search_btn-mike">
+          <span class="blind">음성 검색</span>
+        </button>
+        <button class="btn-common search_btn-close">
+          <span class="blind">닫기</span>
+        </button>
+      </div>
+  
+      <!-- utils -->
+      <div class="utils">
+        <button type="button" class="btn-common utils_btn ico-search">
+          <span class="blind">검색</span>
+        </button>
+
+        <button type="button" class="btn-common utils_btn ico-mike">
+          <span class="blind">음성 검색</span>
+        </button>
+
+        <button type="button" class="btn-common utils_btn ico-make">
+          <span class="blind">유튜브 만들기</span>
+        </button>
+  
+        <button class="btn-common utils_btn ico-app">
+          <span class="blind">youtube 앱</span>
+        </button>
+  
+        
+        <button type="button" class="btn-common utils_btn ico-alarm">
+          <span class="blind">알림창</span>
+        </button>
+  
+        <button type="button" class="utils_btn-profile">
+          <span class="blind">유저 프로필</span>
+          <img src="./asset/images/content/user.jpg" alt="진호">
+        </button>
+      </div>
+    </div>
+
+  </header>  
+  <!-- menu -->
+  <nav class="gnb">
+    <ul class="gnb_list">
+      <li class="gnb_item">
+        <a href="" class="gnb_link ico-home">홈</a>
+      </li>
+      <li class="gnb_item">
+        <a href="" class="gnb_link ico-quest">탐색</a>
+      </li>
+      <li class="gnb_item">
+        <a href="" class="gnb_link ico-shorts">Shorts</a>
+      </li>
+      <li class="gnb_item">
+        <a href="" class="gnb_link ico-subscribe">구독</a>
+      </li>
+      <li class="gnb_item">
+        <a href="" class="gnb_link ico-keep">보관함</a>
+      </li>
+    </ul>      
+  </nav>
+
+  <!-- main -->
+  <main class="main">
+    <section class="cate">
+      <h2 class="blind">카테고리</h2>
+
+      <div class="cate_slide">
+        <div class="swiper">        
+          <div class="cate_list swiper-wrapper">
+            <div class="cate_item swiper-slide"><a href="" class="cate_link active">전체</a></div>
+            <div class="cate_item swiper-slide"><a href="" class="cate_link">카테고리 1</a></div>
+            <div class="cate_item swiper-slide"><a href="" class="cate_link">카테고리 2</a></div>
+            <div class="cate_item swiper-slide"><a href="" class="cate_link">카테고리 3</a></div>
+            <div class="cate_item swiper-slide"><a href="" class="cate_link">카테고리 4</a></div>
+            <div class="cate_item swiper-slide"><a href="" class="cate_link">최근 업로드한 영상</a></div>
+            <div class="cate_item swiper-slide"><a href="" class="cate_link">감상한 동영상</a></div>
+            <div class="cate_item swiper-slide"><a href="" class="cate_link">새로운 맞춤 동영상</a></div>
+          </div>        
+        </div>
+        <div class="cate_btn-box cate_prev">
+          <button type="button" class="btn-common cate_btn ico-prev" aria-hidden="true"></button>
+        </div>
+        <div class="cate_btn-box cate_next">
+          <button type="button" class="btn-common cate_btn ico-next" aria-hidden="true"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="cont">
+      <h2 class="blind">youtube 영상 리스트</h2>
+
+      <div class="ytb-area">
+        <div class="ytb">
+          <div class="ytb_thumb">
+            <a href="" class="ytb_link">
+              <img src="./asset/images/content/thumb.jpg" alt="">
+              <span class="ytb_play-time">00:00</span>
+              <span class="ytb_play_hover">계속 마우스 오버하여 재생하기</span>
+            </a>
+          </div>
+          <div class="ytb_info">
+            <div class="ytb_profile">
+              <a href="" class="ytb_link"><img src="./asset/images/content/unnamed.jpg" alt=""></a>
+            </div>      
+            <div class="ytb_text">
+              <h3 class="ytb_title">
+                <a href="" class="ytb_link">title</a>
+              </h3>
+              <span class="ytb_uploader">
+                <a href="" class="ytb_link">업로더</a>
+              </span>                            
+              <p class="ytb_view">
+                <a href="" class="ytb_link">조회수 <span class="ytb_num">0회</span> &middot; <span class="ytb_date"></span></a>
+              </p>
+  
+              <button class="btn-common ytb_btn-deteil_toggle">
+                <span class="blind">영상 메뉴</span>
+              </button>
+            </div>      
+          </div>
+        </div> 
+      </div>
+    </section>
+  </main>
+
+  <!-- <script src="./asset/js/swiper-bundle.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    const cate = new Swiper('.cate .swiper', {
+      freeMode: true,
+      slidesPerView: "auto",
+      spaceBetween: 12,
+      navigation: {
+        nextEl: '.cate_next',
+        prevEl: '.cate_prev',
+      }
+    });
+  </script>
+  <script>
+    // AIzaSyCJ7z1aMRA6XelQusE4JD2eQveX7fMlhA0
+
+    $(".search_submit").click(function(e){
+      e.preventDefault();
+      
+      var text = $("#search_input").val();
+      console.log(text)
+    })
+
+    var $lists = $(".ytb-area");
+    var html = ""
+
+    $.ajax({
+                type : "GET",
+                dataType : "JSON",
+                url : "https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=1&q=빵&key=AIzaSyCJ7z1aMRA6XelQusE4JD2eQveX7fMlhA0",
+                contentType : "application/json",
+                success : function(jsonData) {
+                  
+                  for (var i = 0; i < jsonData.items.length; i++) {
+                    var items = jsonData.items[i];                    
+                    $.ajax({
+                      type: "GET",
+                      dataType: "JSON",
+                      contentType : "application/json",
+                      url: `https://www.googleapis.com/youtube/v3/videos?part=snippet,statistics,contentDetails&id=${items.id.videoId}&key=AIzaSyCJ7z1aMRA6XelQusE4JD2eQveX7fMlhA0`,
+                      success : function(itemData){
+                        var item = itemData.items[0];                        
+                        console.log(item)
+                        html += `<div class="ytb">
+                          <div class="ytb_thumb">
+                            <a href="https://www.youtube.com/watch?v=${item.id}" class="ytb_link">
+                              <img src="${item.snippet.thumbnails.high.url}" alt="">
+                              <span class="ytb_play-time">${item.contentDetails.duration}</span>
+                              <span class="ytb_play_hover">계속 마우스 오버하여 재생하기</span>
+                            </a>
+                          </div>
+                          <div class="ytb_info">
+                            <div class="ytb_profile">
+                              <a href="" class="ytb_link"><img src="https://youtu.be/${item.snippet.thumbnails.high.url}" alt=""></a>
+                            </div>      
+                            <div class="ytb_text">
+                              <h3 class="ytb_title">
+                                <a href="" class="ytb_link">${item.snippet.title}</a>
+                              </h3>
+                              <span class="ytb_uploader">
+                                <a href="" class="ytb_link">${item.snippet.channelTitle}</a>
+                              </span>                            
+                              <p class="ytb_view">
+                                <a href="" class="ytb_link">조회수 <span class="ytb_num">${item.statistics.viewCount}회</span> &middot; <span class="ytb_date"></span></a>
+                              </p>
+                  
+                              <button class="btn-common ytb_btn-deteil_toggle">
+                                <span class="blind">영상 메뉴</span>
+                              </button>
+                            </div>      
+                          </div>
+                        </div>`;
+                      },
+                      complete : function(data) {
+                      },
+                      error : function(xhr, status, error) {
+                      console.log("유튜브 요청 에러: "+error);
+                      }
+                    })
+                  }                                    
+                },
+                complete : function(data) {
+                  console.log("끝")
+                },
+                error : function(xhr, status, error) {
+                console.log("유튜브 요청 에러: "+error);
+                }
+
+                // $lists.append(html)
+            });
+
+            setTimeout(function(){
+              $lists.append(html)
+            },1000)
+  </script>
+</body>
+</html>
