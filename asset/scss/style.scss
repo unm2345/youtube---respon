@@ -111,6 +111,10 @@
     background: #fff;
 
     z-index: 50;
+
+    &.on{
+      display: flex;
+    }
   }
   
   &_inr{
@@ -663,8 +667,4 @@
   &:hover &_btn-deteil_toggle{
     display: block;
   }
-}
-
-body{
-  height: 1000px;
 }
