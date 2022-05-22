@@ -229,16 +229,13 @@
                 $(".ytb-area").append(html);
               },
               error : function(xhr, status, error) {
-                console.log("유튜브 요청 에러: "+error);
+                console.log(error);
               }
             })
           }                                    
         },
-        complete : function(data) {
-          console.log("끝")
-        },
         error : function(xhr, status, error) {
-          console.log("유튜브 요청 에러: "+error);
+          console.log(error);
         }
       });
     })          
